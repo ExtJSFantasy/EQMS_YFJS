@@ -1,0 +1,40 @@
+Ext.define('EQMS.model.lpa.ItemList', {
+    extend: 'Ext.data.Model',
+    config: {
+        fields: [
+			'itemSubId',
+			'itemName',
+			'fatherGroupBy',
+			'childGroupBy',
+			'type',
+			'tableFatherBom',
+			'tableFatherBomSubId',
+			'tableBomSubId',
+			'auditResult',
+			'field08',
+			'field09',
+			'field01',
+			'field02',
+			'field03',
+			'field04',
+			'nOKStatus',
+			'solveMethod',
+			'month',
+			'subId',
+			'isNC',
+			'isborder',
+			'describe',
+			'partNo',
+			'partName',
+			'actualDisqualified',
+			'actionMeasure',
+			'station',
+			'defectType',
+			'classes',
+			'solverName',
+			'solver',
+			'auditor',
+			'auditorName'
+		]
+    }
+});

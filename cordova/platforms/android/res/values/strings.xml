@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">EQMSLPA</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="soft_update_title">新版本</string>
+    <string name="soft_update_updatebtn">现在更新</string>
+    <string name="soft_update_later">以后再说</string>
+    <string name="soft_updating">更新中...</string>
+    <string name="soft_update_cancel">取消</string>
+</resources>

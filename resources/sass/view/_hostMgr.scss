@@ -1,0 +1,56 @@
+
+.hostMgr{
+	&.hide-listitem .x-list-item
+	{
+		display: none !important;
+	}
+	.select {
+	    width: 24px;
+	    height: 24px;
+	    -webkit-border-radius: 12px;
+	    -ms-border-radius: 12px;
+	    border-radius: 12px;
+	    background: transparent;
+	    border: 1px solid #007aff;
+	    margin-right: 0.3em;
+	    position: relative;
+	    margin-left: 10px;
+	}
+	.select:after {
+	    content: '';
+	    position: absolute;
+	    top: 6px;
+	    left: 5px;
+	    width: 14px;
+	    height: 8px;
+	    background: transparent;
+	    border: 2px solid #fff;
+	    border-top: none;
+	    border-right: none;
+	    -webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	    opacity: 0;
+	}
+	.flex10 {
+	    -webkit-box-flex: 1;
+	    -ms-flex: 1 0 0px;
+	    flex: 1 0 0px;
+	}
+	.x-item-selected .select:after, .support-select.selected .select:after {
+    	opacity: 1;
+	}
+	.x-item-selected .select, .support-select.selected .select {
+	    background: #007aff;
+	    color: #fff;
+	    border: none;
+	    margin-left: 10px;
+	}
+
+	.x-list-item.x-item-selected.x-list-item-tpl {
+    	background-color: transparent;
+	}
+	.x-list-item.x-item-selected.x-list-item-tpl:before {
+   		border-bottom: solid 1px #dbdbe0;
+	}
+}

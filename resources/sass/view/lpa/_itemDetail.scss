@@ -1,0 +1,55 @@
+.itemDetail{
+	.x-tabbar.x-docked-top .x-tab .x-button-label, .x-tabbar.x-docked-top .x-tab .x-badge{
+		line-height: 2.5em;
+	}
+	.btn{
+		&.x-button {
+	    height: 4.1em;
+    	padding: 0 8px;
+    	font-size: 1.5em;
+	    -webkit-border-radius: 6px;
+	    -moz-border-radius: 6px;
+	    -ms-border-radius: 6px;
+	    -o-border-radius: 6px;
+	    border-radius: 6px;
+	    background-color: #fff;
+	    border-color: #157efb;
+	}
+	}
+	.x-field-select .x-component-outer:before, .x-field-select .x-component-outer:after {
+	    pointer-events: none;
+	    position: absolute;
+	    display: block;
+	}
+	.x-field-select .x-component-outer:after {
+	    z-index: 2;
+	    background-color: transparent;
+	    content: '\e917';
+	    font-family: 'IcoMoon';
+	}
+	.x-disclosemark-base, .x-field-disclose .x-component-outer:after, .x-field-select .x-component-outer:after {
+	    top: 50%;
+	    right: .7em;
+	    content: '\e917';
+	    font-family: 'IcoMoon';
+	    font-size: 14px;
+	    color: #ccc;
+	    margin-top: -7px;
+	}
+	.x-form-fieldset-title .x-innerhtml {
+	    white-space: nowrap;
+	    overflow: hidden;
+	    font-size: 2em;
+	    text-overflow: ellipsis;
+	}
+	.x-field-textarea textarea {
+	    min-height: 10em;
+	    padding-top: .5em;
+	}
+	.x-form-fieldset .x-field {
+	    background: transparent;
+	    position: relative;
+	    font-size: 1.5em;
+	}
+}
+

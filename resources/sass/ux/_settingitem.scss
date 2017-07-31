@@ -1,0 +1,12 @@
+.x-field-settingitem.x-field 
+{
+	.x-field-input .displayEl
+	{
+		text-align:right
+	}
+	
+	&.pressing
+	{
+		background-color: #ddd;
+	}
+}

@@ -1,0 +1,156 @@
+.apps{
+	.x-html{
+		padding: 1em 0 0 0;
+	}
+	.x-dataview-container{
+		text-align: center;
+		padding: 40px 0 0 0;
+	}
+	
+	.x-dataview-item {
+		//-webkit-box-shadow: 1px 1px 5px 1px #DCD9D9;
+		//-moz-box-shadow: 1px 1px 5px 1px #DCD9D9;
+		//box-shadow: 1px 1px 5px 1px #DCD9D9;
+		padding: 5px 5px 5px 5px;
+		margin: 4px 4px 25px 4px;
+		background-color: white;
+		width: 30%;
+		//height: 22%;
+		&.x-item-pressed {
+			background-image: linear-gradient(rgba(202, 199, 199, 0.53), rgba(202, 199, 199, 0.53));
+			.square-icon{
+				background-image: linear-gradient(rgba(202, 199, 199, 0.53), rgba(202, 199, 199, 0.53));
+			}
+			.short-text{
+				color: white;
+			}
+		}
+	}
+	
+	.x-dataview-item div {
+		color: black;
+		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.square-icon{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: 104%;
+		background-position: 50%;
+	}
+	
+	.flexbox {
+		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+	}
+	
+	.square-icon.round {
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+	}
+	
+	//报警类型图标颜色和样式
+	.square-icon.app1:before {
+		font-family: "IcoMoon";
+		content: "\e914";
+	}
+	
+	.square-icon.app2:before {
+		font-family: "IcoMoon";
+		content: "\e9b8";
+	}
+	
+	.square-icon.app3:before {
+		font-family: "IcoMoon";
+		content: "\ea07";
+	}
+	
+	//背景颜色
+	.square-icon.color-icon {
+		background-color: #fb667b;
+	}
+	.square-icon.sys:before {
+		font-family: "IcoMoon";
+		content: "\eaeb";
+	}
+	.square-icon.orangeYellow {
+		background-color: #F37E0B;
+	}
+	.square-icon.orange {
+		background-color: #ED5F12;
+	}
+	.square-icon.roseRed {
+		background-color: #DE3554;
+	}
+	.square-icon.lightBlue {
+		background-color: #2C94B1;
+	}
+	.square-icon.green {
+		background-color: #7DB13A;
+	}
+	.square-icon.blue {
+		background-color: #4C93C2;
+	}
+	.square-icon.yellow {
+		background-color: #F19300;
+	}
+	.square-icon.paleYellow {
+		background-color: #F3B428;
+	}
+	.square-icon.smBlue {
+		background-color: #45ADB9;
+	}
+	.square-icon.yellowish {
+		background-color: #B15F2E;
+	}
+	.square-icon.gray {
+		background-color: gray;
+	}
+	
+	.square-icon:before {
+		color: #fff;
+		font-size: 1.5em;
+		padding-top: 15%;
+		display: block;
+		//top: -0.5em;
+		//position: relative;
+	}
+	
+	.short-text {
+		//font-size: .8em;
+		max-width: 100%;
+		text-align: center;
+		padding: .2em .5em;
+	}
+	
+	.ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	.badge {
+		position: absolute;
+		top: 5px;
+		left: 67%;
+		max-width: 55%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-align: center;
+		overflow: hidden;
+		color: #fff;
+		min-width: 18px;
+		font-size: .6rem;
+		line-height: 13px;
+		padding: 1px 2px;
+		border-radius: 26px;
+		background-color: #fc3e39;
+	}
+}

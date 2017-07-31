@@ -1,0 +1,17 @@
+﻿.x-container.prevent-pointer-events  {
+	input, textarea, a {
+		pointer-events: none;
+	}
+}
+
+.x-navigationview-inner > .x-container
+{
+	&.x-dragging
+	{
+		@include box-shadow(0 0 4px 1px #999);
+	}
+	&:not(:first-child)
+	{
+		z-index: 1
+	}
+}

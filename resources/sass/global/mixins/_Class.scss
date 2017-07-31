@@ -1,0 +1,53 @@
+
+@mixin color-button($name, $backcolor, $pressbackcolor, $fontcolor: '#fff', $pressfontcolor: '#fff') {    
+	.x-button.x-button-#{$name}
+	{
+		height:2.3em;
+		background-color: #{$backcolor};
+		background-image: none;
+		border-color: #{$backcolor};
+		@include border-radius(2px);
+				
+		&.x-item-disabled
+		{
+			border-color: #ccc;
+			background-color: #ccc;
+		}
+		.x-button-label, .x-button-icon
+		{
+			color:#{$fontcolor};
+		}
+		
+		&.x-button-pressing
+		{
+			background-color: #{$pressbackcolor};
+			border-color: #{$pressbackcolor};
+			
+			.x-button-label, .x-button-icon
+			{
+				color:#{$pressfontcolor};
+			}
+		}
+	}
+}
+
+@mixin style-button($name) {    
+	.x-button.x-button-#{$name}
+	{
+		background-image:none;
+		background-color:transparent;
+		border:0;
+		padding:0.2em 0;
+				
+		.x-button .x-button-label {
+			font-weight:normal;
+			color:#3F444A;
+			font-size:.7em;
+			margin-top:.25em;
+		}
+		.x-button .x-button-icon {
+			font-size:1.8em;
+			text-align: center;
+		}
+	}
+}

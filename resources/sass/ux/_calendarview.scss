@@ -1,0 +1,145 @@
+.calendar-head
+{
+    background-color: #fff;
+    font-size: .9em;
+    padding: 2px 8px;
+    z-index: 2;
+    position: relative;
+
+	.x-innerhtml
+	{
+	    display: table;
+	    width:100%;
+
+	    div
+		{
+			display: table-cell;
+			width: 14.2857%;
+			text-align: center;
+		}
+	}
+}
+
+.verticalAlign {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+}
+
+.touch-calendar-view
+{
+	table
+	{
+		width: 100%;
+		padding: 0 8px;
+		border-collapse: separate;
+		table-layout: fixed;
+        background: white;
+	}	
+	
+	td
+	{
+		width:14.2857%;
+		overflow: hidden;
+		padding: 9px 1px;
+		position: relative;
+		
+		.tdinner-wrapper
+		{
+			overflow: hidden;
+			width: 100%;
+			position: relative;
+			
+			&:after {
+			  content: '';
+			  display: block;
+			  margin-top: 100%;
+			}
+		}
+		
+		.tdinner {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align:center;
+			border-radius: 10em;
+			
+			.content{
+				vertical-align: middle;
+				display: inline-block;
+			}
+
+			.day{
+				font-weight: bold;
+				line-height: 1em;
+			}
+			
+			.festival{
+				font-size:.75em;
+				color: #888;
+			}
+		}
+		
+		&.weekend .tdinner .festival{
+			color: #fc3e39
+		}
+		
+		&.selected .tdinner
+		{
+			background-color: #ddd;
+		}
+		
+		&.today .tdinner
+		{
+			background-color: #fc3e39;
+			color: #fff;
+			
+			.festival{
+				color: #fff;
+			}
+		}
+		
+		&.prev-month, &.next-month
+		{
+			visibility: hidden;
+			
+			.collapsed &
+			{
+				visibility: visible;
+			}
+		}
+		
+		
+		.simple-event
+		{
+			width: 18%;
+			height: 15%;
+			margin-left: 40%;
+			border-radius: 10px;
+			position: absolute;
+			left: -2px;
+			bottom: 2px;
+			    
+			&.purple
+			{
+				background-color: #9C27B0;
+			}
+			&.gray
+			{
+				background-color: #aaa;
+			}
+			&.green
+			{
+				background-color: #2AC52A;
+			}
+			&.red
+			{
+				background-color: #F91E1E;
+			}
+			&.yellow
+			{
+				background-color: #ECF91D;
+			}
+		}
+	}
+}

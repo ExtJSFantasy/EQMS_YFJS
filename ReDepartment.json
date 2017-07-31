@@ -1,0 +1,28 @@
+{
+	"data":[
+		{
+			"userDescription":"经理",
+			"departmentName":"发泡厂",
+			"userNo":"001",
+			"userName":"吴凡"
+		},
+		{
+			"userDescription":"经理",
+			"departmentName":"生产部",
+			"userNo":"002",
+			"userName":"刘帅"
+		},
+		{
+			"userDescription":"经理",
+			"departmentName":"物料部",
+			"userNo":"002",
+			"userName":"花荣"
+		},
+		{
+			"userDescription":"经理",
+			"departmentName":"质量部",
+			"userNo":"003",
+			"userName":"张琳"
+		}
+	]
+}

@@ -1,0 +1,47 @@
+﻿.line-tabbar
+{
+	background-color: #fff;
+	border-bottom: solid 1px #ccc;
+	
+	.x-dataview-container
+	{
+		display: table;
+		width: 100%;
+	}
+
+	.x-dataview-item
+	{	
+		display: table-cell !important;
+		padding: .6em;
+		font-size: .9em;
+		text-align: center;		
+		
+		&.x-item-pressed {
+			background-color: #F8f8f8
+		}
+		&.x-item-selected {
+			color: $ios7-blue;
+		}
+	}
+	
+	&.equal-width .x-dataview-item
+	{
+		width: 50%;
+	}
+	
+	
+	.x-scroll-scroller
+	{
+		max-width: initial;
+	}
+    
+    .underline {
+	  border-bottom: 2px solid $ios7-blue;
+	  position: absolute;
+	  float: left;
+	  left: 0px;
+	  bottom: 0;
+	  transition: 0.2s cubic-bezier(0.42, 0.6, 0.29, 0.62);
+	  -webkit-transition: 0.2s cubic-bezier(0.42, 0.6, 0.29, 0.62);
+	}
+}

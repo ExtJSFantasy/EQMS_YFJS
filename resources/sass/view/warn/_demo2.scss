@@ -1,0 +1,308 @@
+.demo2{
+	.x-scroll-bar-y.active {
+    width: 2px;
+	}
+	.x-form-fieldset .x-field:before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    bottom: 0px;
+	    left: 1em;
+	    right: 0px;
+	    border-bottom: solid 1px rgba(255,255,255,0.15);
+	}
+	.x-label-align-left, .x-label-align-right {
+	    -webkit-box-orient: horizontal !important;
+	    -ms-flex-direction: row !important;
+	    flex-direction: row !important;
+	    margin: 3px;
+	}
+	.x-form-fieldset .x-form-fieldset-inner {
+	    background: #fff;
+	    padding: 0;
+	    border-color: #909090;
+	    -webkit-border-radius: 0;
+	    -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	    -o-border-radius: 0;
+	    border-radius: 0;
+	}
+
+
+	.x-dataview-container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.x-dataview-item {
+		margin: 5% 0 0 0;
+    	width: 25%;
+		// width: 100px;
+		// height: 100px;
+		// flex-basis: 25%;
+		&.x-item-pressed .square-icon{
+			background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+		}
+		
+		&.x-item-pressed .short-text{
+			color: #3D76D8;
+		}
+	}
+	
+	.icon-wrapper {
+		padding: 10% 15%;
+	}
+	
+	.box-align-center {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	
+	.box-orient-v {
+		-webkit-box-orient: vertical;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	
+	.flexbox {
+		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+	}
+	
+	.square-icon.round {
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+	}
+
+	.square-icon {
+		-webkit-border-radius: 10%;
+		-moz-border-radius: 10%;
+		-ms-border-radius: 10%;
+		border-radius: 10%;
+		text-align: center;
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+	}
+	
+	//报警类型图标颜色和样式
+	.square-icon.warnType1:before {
+		//font-family: "IcoMoon";
+		//content: "\3a";
+	}
+	.square-icon.warnType2:before {
+		//font-family: "IcoMoon";
+		//content: "\4f";
+	}
+	.square-icon.warnType3:before {
+		//font-family: "IcoMoon";
+		//content: "\3b";
+	}
+	.square-icon.warnType4:before {
+		//font-family: "IcoMoon";
+		//content: "\47";
+	}
+	.square-icon.warnType5:before {
+		//font-family: "IcoMoon";
+		//content: "\58";
+	}
+	.square-icon.warnType6:before {
+		//font-family: "IcoMoon";
+		//content: "\61";
+	}
+	.square-icon.warnType7:before {
+		//font-family: "IcoMoon";
+		//content: "\62";
+	}
+	.square-icon.warnType8:before {
+		//font-family: "IcoMoon";
+		//content: "\68";
+	}
+	.square-icon.warnType9:before {
+		//font-family: "IcoMoon";
+		//content: "\72";
+	}
+	.square-icon.warnType10:before {
+		//font-family: "IcoMoon";
+		//content: "\75";
+	}
+	.square-icon.warnType11:before {
+		//font-family: "IcoMoon";
+		//content: "\78";
+	}
+	.square-icon.warnType12:before {
+		//font-family: "IcoMoon";
+		//content: "\79";
+	}
+	
+	//工位图标
+	.square-icon.station1:before {
+		//font-family: "IcoMoon";
+		//content: "\e903";
+	}
+	.square-icon.station2:before {
+		//font-family: "IcoMoon";
+		//content: "\e904";
+	}
+	.square-icon.station3:before {
+		//font-family: "IcoMoon";
+		//content: "\e905";
+	}
+	.square-icon.station4:before {
+		//font-family: "IcoMoon";
+		//content: "\e906";
+	}
+	.square-icon.station5:before {
+		//font-family: "IcoMoon";
+		//content: "\e907";
+	}
+	.square-icon.station6:before {
+		//font-family: "IcoMoon";
+		//content: "\e908";
+	}
+	.square-icon.station7:before {
+		//font-family: "IcoMoon";
+		//content: "\e909";
+	}
+	.square-icon.station8:before {
+		//font-family: "IcoMoon";
+		//content: "\e90a";
+	}
+	.square-icon.station9:before {
+		//font-family: "IcoMoon";
+		//content: "\e90b";
+	}
+	.square-icon.station10:before {
+		//font-family: "IcoMoon";
+		//content: "\e90c";
+	}
+	.square-icon.station11:before {
+		//font-family: "IcoMoon";
+		//content: "\e90d";
+	}
+	.square-icon.station12:before {
+		//font-family: "IcoMoon";
+		//content: "\e90e";
+	}
+	.square-icon.station13:before {
+		//font-family: "IcoMoon";
+		//content: "\e90f";
+	}
+	.square-icon.station14:before {
+		//font-family: "IcoMoon";
+		//content: "\e910";
+	}
+	.square-icon.station15:before {
+		//font-family: "IcoMoon";
+		//content: "\e911";
+	}
+	.square-icon.station16:before {
+		//font-family: "IcoMoon";
+		//content: "\e912";
+	}
+	.square-icon.station17:before {
+		//font-family: "IcoMoon";
+		//content: "\e913";
+	}
+	.square-icon.station18:before {
+		//font-family: "IcoMoon";
+		//content: "\e916";
+	}
+	.square-icon.station19:before {
+		//font-family: "IcoMoon";
+		//content: "\e917";
+	}
+	.square-icon.station20:before {
+		//font-family: "IcoMoon";
+		//content: "\e918";
+	}
+	//背景颜色
+	.square-icon.color-icon {
+		background-color: #fb667b;
+	}
+	.square-icon.sys:before {
+		font-family: "IcoMoon";
+		content: "\eaeb";
+	}
+	.square-icon.orangeYellow {
+		background-color: #F37E0B;
+	}
+	.square-icon.orange {
+		background-color: #ED5F12;
+	}
+	.square-icon.roseRed {
+		background-color: #DE3554;
+	}
+	.square-icon.lightBlue {
+		background-color: #2C94B1;
+	}
+	.square-icon.green {
+		background-color: #7DB13A;
+	}
+	.square-icon.blue {
+		background-color: #4C93C2;
+	}
+	.square-icon.yellow {
+		background-color: #F19300;
+	}
+	.square-icon.paleYellow {
+		background-color: #F3B428;
+	}
+	.square-icon.smBlue {
+		background-color: #45ADB9;
+	}
+	.square-icon.yellowish {
+		background-color: #B15F2E;
+	}
+	.square-icon.gray {
+		background-color: gray;
+	}
+	
+	.square-icon:before {
+	    color: #FFFFFF;
+	    font-size: 1em;
+	    padding-top: 50%;
+	    display: block;
+	    top: -0.5em;
+	    text-align: center;
+	    position: relative;
+	}
+	
+	.short-text {
+		font-size: .8em;
+		max-width: 100%;
+		text-align: center;
+		padding: .3em .5em;
+	}
+	
+	.ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	.badge {
+		position: absolute;
+		top: 5px;
+		left: 67%;
+		max-width: 55%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-align: center;
+		overflow: hidden;
+		color: #fff;
+		min-width: 18px;
+		font-size: .6rem;
+		line-height: 13px;
+		padding: 1px 2px;
+		border-radius: 26px;
+		background-color: #fc3e39;
+	}
+	.round.square-icon:before {
+	    content: attr(letter);
+	}
+}

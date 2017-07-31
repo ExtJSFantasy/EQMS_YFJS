@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: cdvfile: 'unsafe-eval' *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+    <title>EQMS</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        #appLoadingIndicator{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            margin-top: -150px;
+            left: 50%;
+            margin-left: -150px;
+        }
+        @media screen and (max-width: 360px), screen and (max-height: 360px) {
+            #appLoadingIndicator {
+                width: 150px;
+                height: 150px;
+                margin-top: -75px;
+                margin-left: -75px;
+            }
+        }
+        #appLoadingIndicator .block{
+            width: 100%;
+            height: 100%;
+            -webkit-animation: circle 3s infinite linear;
+            animation: circle 3s infinite linear;
+        }
+        #appLoadingIndicator .line{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: solid 1px #157efb;
+            border-radius: 50%;
+        }
+        #appLoadingIndicator .big{
+            width: 44%;
+            height: 44%;
+            background-color: #157efb;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 50%;
+            margin-top: -22%;
+            left: 50%;
+            margin-left: -22%;
+        }
+
+        #appLoadingIndicator .small{
+            position: absolute;
+            top: 6.13%;
+            left: 6.13%;
+            width: 17.33%;
+            height: 17.33%;
+            background-color: #157efb;
+            border-radius: 50%;
+        }
+
+        @-webkit-keyframes circle{
+            to{
+                -webkit-transform:rotate(360deg);
+            }
+        }
+        @keyframes circle{
+            to{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" data-app="8fb53ec0-ab28-4d6f-a6fb-a39e543a0eca" type="text/javascript">(function(d){function l(b,d){var a=document.createElement("meta");a.setAttribute("name",b);a.setAttribute("content",d);p.appendChild(a)}var p=d.document.head||d.document.getElementsByTagName("head")[0],b=d.Ext;"undefined"==typeof b&&(d.Ext=b={});b.blink=function(d){var m=d.js||[];d=d.css||[];var a,h,c,g,n,j;navigator.userAgent.match(/IEMobile\/10\.0/)&&(a=document.createElement("style"),a.appendChild(document.createTextNode("@media screen and (orientation: portrait) {@-ms-viewport {width: 320px !important;}}@media screen and (orientation: landscape) {@-ms-viewport {width: 560px !important;}}")),
+document.getElementsByTagName("head")[0].appendChild(a));l("viewport","width\x3ddevice-width, initial-scale\x3d1.0, maximum-scale\x3d1.0, minimum-scale\x3d1.0, user-scalable\x3dno");l("apple-mobile-web-app-capable","yes");l("apple-touch-fullscreen","yes");b.microloaded=!0;var k=window.Ext.filterPlatform=function(a){function c(a){var b=/Mobile(\/|\s)/.test(a);return/(iPhone|iPod)/.test(a)||!/(Silk)/.test(a)&&/(Android)/.test(a)&&(/(Android 2)/.test(a)||b)||/(BlackBerry|BB)/.test(a)&&b||/(Windows Phone)/.test(a)}
+function d(a){return!c(a)&&(/iPad/.test(a)||/Android|Silk/.test(a)||/(RIM Tablet OS)/.test(a)||/MSIE 10/.test(a)&&/; Touch/.test(a))}var f=!1,e=navigator.userAgent,b,g;a=[].concat(a);b=window.location.search.substr(1).split("\x26");g={};var h;for(h=0;h<b.length;h++){var j=b[h].split("\x3d");g[j[0]]=j[1]}if(b=g.platform)return-1!=a.indexOf(b);b=0;for(g=a.length;b<g;b++){switch(a[b]){case "phone":f=c(e);break;case "tablet":f=d(e);break;case "desktop":f=!c(e)&&!d(e);break;case "ios":f=/(iPad|iPhone|iPod)/.test(e);
+break;case "android":f=/(Android|Silk)/.test(e);break;case "blackberry":f=/(BlackBerry|BB)/.test(e);break;case "safari":f=/Safari/.test(e)&&!/(BlackBerry|BB)/.test(e);break;case "chrome":f=/Chrome/.test(e);break;case "ie10":f=/MSIE 10/.test(e);break;case "windows":f=/MSIE 10/.test(e)||/Trident/.test(e);break;case "tizen":f=/Tizen/.test(e);break;case "firefox":f=/Firefox/.test(e)}if(f)return!0}return!1};a=0;for(h=d.length;a<h;a++){c=d[a];"string"!=typeof c&&(g=c.platform,j=c.exclude,n=c.theme,c=c.path);
+if(g){if(!k(g)||k(j))continue;b.theme||(b.theme={});b.theme.name||(b.theme.name=n||"Default")}document.write('\x3clink rel\x3d"stylesheet" href\x3d"'+c+'"\x3e')}a=0;for(h=m.length;a<h;a++)c=m[a],"string"!=typeof c&&(g=c.platform,j=c.exclude,c=c.path),(!g||k(g)&&!k(j))&&document.write('\x3cscript src\x3d"'+c+'"\x3e\x3c/script\x3e')}})(this);
+Ext.blink({id:"8fb53ec0-ab28-4d6f-a6fb-a39e543a0eca",hash:"f09ba91074f3996286b17f8efbeb99ddcdd42a5c",js:[{remote:!0,path:"cordova.js"},{update:"full",hash:"f63c7d8cc7fbd6788d3e49a8e51051b91b8de853",path:"Config.js"},{update:"full",hash:"7bb684178650d25fc9fdb7c67474b6ca98caf1e8",path:"app.js"}],css:[{update:"full",hash:"67d86d086007153269d2d81840e5d1fa43cf8f02",path:"resources/css/app.css"}]});</script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div class="block">
+            <div class="line">
+                <div class="big"></div>
+            </div>
+            <div class="small"></div>
+        </div>
+    </div>
+</body>
+</html>

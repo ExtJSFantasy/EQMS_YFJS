@@ -1,0 +1,43 @@
+.xjList{
+	.flexbox {
+		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+	}
+	
+	.box-align-center {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	
+	.flex10 {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 0 0;
+		flex: 1 0 0;
+		width: 75%;
+	}
+	
+	.item{
+		font:6px/24px \5B8B\4F53; 
+		font-family:Microsoft YaHei;
+		font-size:16px; 
+		overflow:hidden;
+		color:#353535;
+		text-decoration:none;
+	}
+	
+	.op {
+		border-top: solid 0px #e5e5e5;
+		display: table;
+		width: 25%;
+	}
+	
+	.op .btn {
+		text-align: center;
+		color: #929292;
+		display: table-cell;
+		line-height: 2rem;
+		width: 33.333%;
+	}
+}

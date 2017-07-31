@@ -1,0 +1,49 @@
+.login-view{
+	.applogo:before
+	{
+	    font-family: "icomoon";
+	    content: '\eaeb';
+	    color: #377497;
+	    text-align: center;
+	    font-size: 6.5em;
+	}
+	
+	.username
+	{
+		.x-form-label:before{
+			font-family: 'icomoon';
+			content: '\e907';
+			font-size: 1.2em;
+		}
+	}
+	.password
+	{
+		.x-form-label:before{
+			font-family: 'icomoon';
+			content: '\e905';
+			font-size: 1.2em;
+		}
+	}
+	
+	.x-button{
+		background-color: #EDEBF1;
+		border-color: #EDEBF1;
+		color: #377497;
+		
+		&.x-button-pressing
+		{
+			.x-button-label, .x-button-icon
+			{
+				color: #72A2BD;
+			}
+		}
+	}
+	
+	.setting{
+		color: #377497;
+	}
+	
+	.qrcode{
+		color: #377497;
+	}
+}

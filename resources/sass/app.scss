@@ -1,0 +1,170 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/cupertino';
+@import 'sencha-touch/cupertino/all';
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
+
+@font-face{
+font-family:"IcoMoon";
+src:url('../sass/stylesheets/fonts/icomoon/icomoon.woff') format('woff'),
+url('../sass/stylesheets/fonts/icomoon/icomoon.ttf') format('truetype'),
+url('../sass/stylesheets/fonts/icomoon/icomoon.svg') format('svg')
+}
+
+@import 'global/mixins/Class';
+@import 'ux/listoptions';
+@import 'ux/calendarview';
+@import 'ux/navigationview';
+@import 'ux/linetabbar';
+@import 'ux/settingitem';
+
+@include icon('setting', '\e994', 'IcoMoon');
+@include icon('qrcode', '\eaef', 'IcoMoon');
+@include icon('add', '\ea0a', 'IcoMoon');
+@include icon('back', '\e90a', 'IcoMoon'); 
+@include icon('lpa', '\e92d', 'IcoMoon'); 
+@include icon('pa', '\e9b8', 'IcoMoon'); 
+@include icon('sj', '\eae8', 'IcoMoon'); 
+@include icon('xj', '\ea8f', 'IcoMoon'); 
+@include icon('jj', '\e9d3', 'IcoMoon'); 
+@include icon('filter', '\ea5b', 'IcoMoon');
+@include icon('message', '\e96b', 'IcoMoon'); 
+@include icon('task', '\e925', 'IcoMoon'); 
+@include icon('app', '\eac2', 'IcoMoon'); 
+@include icon('problem', '\e9bb', 'IcoMoon'); 
+@include icon('plus', '\ea0a', 'IcoMoon'); 
+@include icon('camera', '\e90f', 'IcoMoon');
+@include icon('newcamera', '\e916', 'IcoMoon');
+@include icon('cancel-circle', '\e903', 'IcoMoon'); 
+
+@import 'view/login';
+@import 'view/hostMgr';
+@import 'view/main';
+@import 'view/home';
+@import 'view/img';
+@import 'view/camera';
+@import 'view/mine';
+@import 'view/profile';
+@import 'view/apps';
+@import 'view/warn/demo2';
+@import 'view/warn/warnList';
+@import 'view/warn/listDetail';
+
+@import 'view/lpa/lpalist';
+@import 'view/lpa/itemList';
+@import 'view/lpa/itemDetail';
+@import 'view/lpa/spectaculars';
+@import 'view/lpa/itemListPanel';
+@import 'view/xj/xjList';
+@import 'view/xj/xjItemList';
+
+@include color-button('blue', "#377497", "#72A2BD");
+@include color-button('orange', "#F7AB1E", "#F58D20");
+@include color-button('green', "#1BC366", "#23A35C");
+@include color-button('red', "#ff3b30", "#CD4E41");
+
+.x-field-disclose .x-field-input.displayCmp {
+    padding-right: 1.5em;
+}
+.x-field-input.displayCmp .displayEl {
+    word-break: break-all;
+    padding: 0.5em 0.4em;
+}
+.x-field-input.displayCmp .displayEl.two-line-ellipsis {
+    max-height: 3.75em;
+    line-height: 1.5em;
+}
+
+.x-field-disclose .x-component-outer {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+
+.x-field-disclose .x-component-outer:after {
+    color: #ccc;
+    position: absolute;
+    right: 0.6em;
+    height: 1em;
+    width: 1em;
+    font-size: 1em;
+    top: 50%;
+    margin-top: -0.5em;
+    content: '\21';
+    font-family: ios7;
+    line-height: 1;
+    text-align: center;
+}
+
+.box-align-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.box-pack-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.box-orient-v {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexbox {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+.x-scroll-bar-y.active {
+    width: 3px;
+}
+.excep{
+    background: #F44336;
+}
+.x-sheet, .x-sheet-action {
+      height: 100%;
+}
+.x-sheet-action {
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: inset 0 1px 0 rgba(205, 171, 171, 0.3);
+    background-color: rgba(255,255,255,0.8);
+}
+.x-toolbar.x-docked-top {
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: .8em;
+    background: #d1d3de;
+}
+.x-button.x-button-back {
+    border: 0px;
+    color: #0f0f0f;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+.x-button.x-button-back:before {
+    content: '"';
+    font-family: 'iOS7';
+    color: #0f0f0f;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: transparent;
+    line-height: 1.3em;
+    padding-left: 0px;
+}

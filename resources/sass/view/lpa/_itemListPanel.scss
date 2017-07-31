@@ -1,0 +1,29 @@
+.itemListPanel{
+	.x-stretched.x-container {
+	    width: 100%;
+	    margin: 1px 0px 0px 0px;
+	    display: flex;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    -webkit-box-orient: vertical;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	}
+	.x-panel.x-floating, .x-form.x-floating {
+	    background: transparent;
+	    padding: 0;
+	    -webkit-border-radius: 6px;
+	    -moz-border-radius: 6px;
+	    -ms-border-radius: 6px;
+	    -o-border-radius: 6px;
+	    border-radius: 6px;
+	}
+	.x-button-normal, .x-button-round, .x-button-small, .x-button-forward {
+	    border-color: #157efb;
+	    margin-top: 0.5em;
+	    width: 100%;
+	    background: #70b3bb;
+	    border: 0px;
+	    border-radius: 10px;
+	}
+}

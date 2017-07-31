@@ -1,0 +1,58 @@
+.home {
+	.btn{
+		height: auto;
+	}
+	.x-button .x-button-label {
+		font-weight:normal;
+		color:#3F444A;
+		font-size:.8em;
+	}
+	.x-button .x-button-icon {
+		font-size: 1.5em;
+		margin: .5em;
+	}
+	.x-button {
+		background:none;
+		border:0;
+	}
+	
+	.x-toolbar .x-button .x-button-icon {
+		font-size: 1.2em;
+		margin: 0em;
+	}
+	
+	/*#region ×ÖÌåÑÕÉ« */
+	.orangeYellow {
+		color:#F37E0B;
+	}
+	.orange {
+		color:#ED5F12;
+	}
+	.roseRed {
+		color:#DE3554;
+	}
+	.lightBlue {
+		color:#2C94B1;
+	}
+	.green {
+		color:#7DB13A;
+	}
+	.blue {
+		color:#4C93C2;
+	}
+	.yellow {
+		color:#F19300;
+	}
+	.paleYellow {
+		color:#F3B428;
+	}
+	.smBlue {
+		color:#45ADB9;
+	}
+	.yellowish {
+		color:#B15F2E;
+	}
+	.gray {
+		color:gray;
+	}
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\ST\touch-2.4.2\EQMS2\cordova\platforms\android\CordovaLib\src\main\shaders"/></dataSet><dataSet config="release"><source path="D:\ST\touch-2.4.2\EQMS2\cordova\platforms\android\CordovaLib\src\release\shaders"/></dataSet></merger>
